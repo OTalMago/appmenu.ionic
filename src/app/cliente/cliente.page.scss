@@ -4,3 +4,10 @@
     font-size: 1.2em;  /* Tamanho das estrelas */
   }
   
+  .footer-personalizado {
+    ion-toolbar {
+      --background: #3b0e3b;
+      --color: #ffffff;
+      text-align: center;
+    }
+  }

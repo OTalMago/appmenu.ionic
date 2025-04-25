@@ -5,11 +5,16 @@ import { AlertController } from '@ionic/angular';
   selector: 'app-cliente',
   templateUrl: './cliente.page.html',
   styleUrls: ['./cliente.page.scss'],
-  standalone: false,  // Mantido sem alterações!
+  standalone: false, 
+   // Mantido sem alterações!
 })
 export class ClientePage implements OnInit {
 
+  usuario: string = 'Mago';
+
   clientes = [
+
+
     { 
       nome: 'Paracelso', 
       email: 'paracelso@gmail.com', 

@@ -24,10 +24,19 @@
 
 #container a {
   text-decoration: none;
+  
 }
 
 .logo-card {
   background-color: transparent;
+}
+
+.footer-personalizado {
+  ion-toolbar {
+    --background: #3b0e3b;  /* Cor do rodapé */
+    --color: #ffffff;       /* Cor do texto */
+    text-align: center;
+  }
 }
 
 .logo-img {

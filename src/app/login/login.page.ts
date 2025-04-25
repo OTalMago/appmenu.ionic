@@ -5,12 +5,14 @@ import { AlertController } from '@ionic/angular';
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
-  standalone: false,  // Mantido sem alteração!
+  standalone: false,  
 })
 export class LoginPage implements OnInit {
 
-  login: string = '';   // Variável para o login
-  senha: string = '';   // Variável para a senha
+usuario: string = 'Mago';
+  login: string = '';   
+  senha: string = ''; 
+    
 
   constructor(private alertController: AlertController) { }
 

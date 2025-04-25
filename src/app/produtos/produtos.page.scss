@@ -18,18 +18,25 @@
     margin-left: auto;                          
   }
   
- /* Customização real do ion-alert */
+ 
 .alert-custom {
-    --background: #1e1e2f;           /* Fundo do alerta */
-    --backdrop-opacity: 0.8;         /* Escurecimento do fundo da tela */
-    --color: #ffffff;                /* Cor padrão do texto */
+    --background: #1e1e2f;           
+    --backdrop-opacity: 0.8;       
+    --color: #ffffff;                
   
-    /* Botão OK */
-    --button-color: #4caf50;         /* Cor do texto do botão OK */
+   
+    --button-color: #4caf50;        
     --button-background: transparent;
     --button-border-color: transparent;
-  
-    /* Fonte do título e mensagem */
-    --title-color: #4caf50;          /* Cor do título */
-    --message-color: #cccccc;        /* Cor da mensagem */
+ 
+    --title-color: #4caf50;          
+    --message-color: #cccccc;        
+  }
+
+  .footer-personalizado {
+    ion-toolbar {
+      --background: #3b0e3b;
+      --color: #ffffff;
+      text-align: center;
+    }
   }

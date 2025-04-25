@@ -9,6 +9,8 @@ import { ToastController } from '@ionic/angular';
 })
 export class ProdutosPage {
 
+  usuario: string = 'Mago'; 
+  
   constructor(private toastController: ToastController) { }
 
  async comprar() {

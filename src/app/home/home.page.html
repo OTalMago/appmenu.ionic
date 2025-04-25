@@ -8,16 +8,25 @@
 
 <ion-content>
   <ion-card class="logo-card">
-  <div class="logo-img">
-  <img src="../../assets/img/LogoMago.png" width="450px" height="300px" size="full"> 
-  </div>
-</ion-card>
-<ion-card>
-  <h3>Grimórios, cajados, elixires e artefatos místicos. Magia e poder em cada detalhe.</h3>
-  <ion-list>
-    <ion-item *ngFor="let itens of item2" (click)="irParaPagina(itens.url)">
-      <ion-label>{{ itens.nome }}</ion-label>
-    </ion-item>
-  </ion-list>
-</ion-card>
+    <div class="logo-img">
+      <img src="../../assets/img/LogoMago.png" width="450px" height="300px" size="full"> 
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <h3>Grimórios, cajados, elixires e artefatos místicos. Magia e poder em cada detalhe.</h3>
+    <ion-list>
+      <ion-item *ngFor="let itens of item2" (click)="irParaPagina(itens.url)">
+        <ion-label>{{ itens.nome }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 </ion-content>
+
+<ion-footer class="footer-personalizado">
+  <ion-toolbar>
+    <ion-title size="small">
+      🔮 Relicário do Mago | Usuário: {{ usuario }}
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
