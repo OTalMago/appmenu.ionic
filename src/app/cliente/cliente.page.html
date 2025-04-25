@@ -3,14 +3,39 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Cliente</ion-title>
+    <ion-title>Clientes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Cliente</ion-title>
+      <ion-title size="large">Clientes</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let cliente of clientes">
+      <!-- Avatar -->
+      <ion-avatar slot="start">
+        <img [src]="cliente.foto" alt="Foto do cliente">
+      </ion-avatar>
+
+      <!-- Informações do cliente -->
+      <ion-label>
+        <h2>{{ cliente.nome }}</h2>
+        <p>{{ cliente.email }}</p>
+      </ion-label>
+
+      <!-- Botão de detalhes -->
+      <ion-button slot="end" fill="clear" color="primary" (click)="detalhes(cliente)">
+        <ion-icon name="information-circle-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+
+      <!-- Botão de exclusão -->
+      <ion-button slot="end" fill="clear" color="danger" (click)="excluir(cliente)">
+        <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
 </ion-content>
