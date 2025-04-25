@@ -1,3 +1,35 @@
-.btnComprar {
-    justify-content: space-between;
-}
+.btnComprar ion-item {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;              
+    padding: 0 16px;
+    --inner-padding-end: 0;            
+    --inner-padding-start: 0;
+  }
+  
+  .btnComprar p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2d7a35;
+  }
+  
+  .btnComprar ion-button {
+    margin-left: auto;                          
+  }
+  
+ /* Customização real do ion-alert */
+.alert-custom {
+    --background: #1e1e2f;           /* Fundo do alerta */
+    --backdrop-opacity: 0.8;         /* Escurecimento do fundo da tela */
+    --color: #ffffff;                /* Cor padrão do texto */
+  
+    /* Botão OK */
+    --button-color: #4caf50;         /* Cor do texto do botão OK */
+    --button-background: transparent;
+    --button-border-color: transparent;
+  
+    /* Fonte do título e mensagem */
+    --title-color: #4caf50;          /* Cor do título */
+    --message-color: #cccccc;        /* Cor da mensagem */
+  }
