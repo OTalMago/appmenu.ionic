@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Empório do Mago
+      Relicário do Mago
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,11 @@
 <ion-content>
   <ion-card class="logo-card">
   <div class="logo-img">
-  <img src="../../assets/img/magoLogo.png" width="450px" height="300px" size="full"> 
+  <img src="../../assets/img/LogoMago.png" width="450px" height="300px" size="full"> 
   </div>
 </ion-card>
 <ion-card>
-  <h3>A Magia Dos Sabores No Seu Paladar</h3>
+  <h3>Grimórios, cajados, elixires e artefatos místicos. Magia e poder em cada detalhe.</h3>
   <ion-list>
     <ion-item *ngFor="let itens of item2" (click)="irParaPagina(itens.url)">
       <ion-label>{{ itens.nome }}</ion-label>
