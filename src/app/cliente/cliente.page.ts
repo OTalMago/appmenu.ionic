@@ -19,7 +19,7 @@ export class ClientePage implements OnInit {
       nome: 'Paracelso', 
       email: 'paracelso@gmail.com', 
       foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Paracelsus.jpg/1200px-Paracelsus.jpg',
-      feedback: { estrelas: 5, comentario: 'Elixires de qualidade incomparável.' }
+      feedback: { estrelas: 5, comentario: 'Poções de qualidade incomparável.' }
     },
     { 
       nome: 'Gandalf', 
@@ -43,7 +43,7 @@ export class ClientePage implements OnInit {
       nome: 'Grigori Rasputin', 
       email: 'rasputin@gmail.com', 
       foto: 'https://cdn.prod.website-files.com/60ff690cd7b0537edb99a29a/674e2269adf257d2cae2e0bb_Rasputin.webp',
-      feedback: { estrelas: 2, comentario: 'Preciso de algo mais sombrio.' }
+      feedback: { estrelas: 3, comentario: 'Preciso de algo mais sombrio.' }
     },
     { 
       nome: 'Éliphas Lévi', 
@@ -55,7 +55,7 @@ export class ClientePage implements OnInit {
       nome: 'Simon Magus', 
       email: 'magus@gmail.com', 
       foto: 'https://www.1st-art-gallery.com/media/catalog/product/cache/9bad95616889b8b60a4bb85fbf2f33f9/b/a/base_26068152.webp',
-      feedback: { estrelas: 3, comentario: 'Os colares protegem bem.' }
+      feedback: { estrelas: 4, comentario: 'As poções funcionam muito bem.' }
     },
     { 
       nome: 'John Dee', 
